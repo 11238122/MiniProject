@@ -1,0 +1,16 @@
+import random
+count = 0
+number = []
+lists = []
+
+while count < 20:
+    picker = random.randint(0,3)
+    number.append(picker)
+    count = count + 1
+
+while count < 22:
+    if number.pop(0) == 0:
+        lists.append('red1')
+    break
+print(number)
+print(lists)
